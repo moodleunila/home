@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Unila en línea</title>
+
+    <!-- Bootstrap  CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	
+    <!-- tipos -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700|Raleway:300,400,400i,700" rel="stylesheet">
+
+    <!-- estilos -->
+    <link href="css/unilaportal.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/animate.css">
+  </head>
+
+  <body id="page-top">
+	 <!-- Navigation -->
+ 
+	<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+		<div class="container">
+
+
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse mt-0 navbar-collapse w-100 flex-md-column" id="navbarCollapse">
+				<ul class="navbar-nav w-100 ml-auto justify-content-between" id="logoinicio">
+					<li class="nav-item pl-3 d-none d-sm-none d-md-none d-lg-flex">
+					  <div class="my-1"><a class="navbar-link" href="#"><img src="img/logounila.png" class="w-75" alt="logo"></a></div>
+					</li>
+					<li class="nav-item px-auto " id="iniciosesion">
+						<form action="http://save.unila.edu.mx/campusvirtual/login/index.php" method="post" id="login">
+							<input type="text" class="form-control form-control-sm " id="username" name="username" placeholder="Usuario" size="12" >
+				      		<input type="password" name="password" class="form-control form-control-sm" id="password" placeholder="Contraseña" size="12">
+			      		</form>
+						<div class="text-center pt-1"> <button onclick="return acceder();"> <i class="fas fa-user fa-lg"></i> Entrar</button></div>
+					</li>
+				  </ul>
+				<ul class="navbar-nav w-100 d-none d-sm-none d-md-none d-lg-flex" id="menuredes">
+					<li class="nav-item">
+						<a class="nav-link pl-0 pr-1 " href="https://www.facebook.com/UnilaEduMx" target="_blank"><i class="fab fa-facebook-square"></i></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link px-1 " href="https://twitter.com/unilaedumx" target="_blank"><i class="fab fa-twitter"></i></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link px-1 " href="https://www.youtube.com/user/UniversidadLatinaMx" target="_blank"><i class="fab fa-youtube"></i></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link px-1" href="https://www.instagram.com/unilaedumx/" target="_blank"><i class="fab fa-instagram"></i></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link px-1 " href="http://unila.tv/home/" target="_blank"><i class="fas fa-tv"></i></a>
+					</li>
+					<li class="nav-item ml-4">
+						<a class="nav-link px-1 " href="tel:+52559171 9670"><i class="fas fa-phone"></i> (55) 9171 9670</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link px-3" href="mailto:moodle@unila.edu.mx"><i class="fas fa-envelope"></i> moodle@unila.edu.mx</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link px-1" href="#"><i class="fas fa-map-marker-alt"></i></a>
+					</li>
+					<li class="nav-item pl-3 h-75">
+						<form class="form-inline ml-auto w-100 h-100" id="busqueda">
+							<div class="input-group">
+								<input type="text" class="form-control " placeholder="Buscar">
+								<div class="input-group-append">
+									<button class="btns" type="button"><i class="fa fa-search"></i></button>
+								</div>
+							</div>
+						</form>
+					</li>
+				</ul>
+
+				<ul class="navbar-nav w-100  ml-auto" id="ligasindex">
+					<li class="nav-item d-none d-sm-none d-md-none d-lg-flex">
+					  <a class="nav-link px-0 py-1 js-scroll-trigger" href="#arriba"><i class="fas fa-home"></i></a>
+					</li>
+					<li class="nav-item">
+					  <a class="nav-link py-1 js-scroll-trigger" href="#oferta">Oferta educativa</a>
+					</li>
+					<li class="nav-item">
+					  <a class="nav-link py-1 js-scroll-trigger" href="#modalidad">Modalidad en línea</a>
+					</li>
+					<li class="nav-item">
+					  <a class="nav-link py-1 js-scroll-trigger" href="#preguntas">Preguntas frecuentes</a>
+					</li>
+					<li class="nav-item">
+					  <a class="nav-link py-1 js-scroll-trigger" href="#contacto">Contáctanos</a>
+					</li>
+				  </ul>
+			</div>
+			<div class="my-0 h-100 py-0 px-2 d-none d-sm-none d-md-none d-lg-block" id="logoeduca"><a class="navbar-brands" href="#"><img src="img/unilaenlinea.png" class=" " alt="logo"></a></div>
+		</div>
+	</nav>
+
+	  <!--arriba-->
+	<section id="arriba">
+		<div class="container">
+			<div class="row mt-4">
+				<div class="col-12 col-lg-6">
+					<img src="img/unilaenlineagde.png" alt="logo grande" class="w-50 wow fadeIn mx-auto d-block" data-wow-delay="1s" data-wow-duration="2s">
+				</div>
+				<div id="arribatxt"  class="col-12 col-lg-6">
+					
+					  <h1 class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="1s">Donde hay un sueño, hay un camino<br> Constrúyelo estudiando en la <strong>UNILA</strong></h1>
+
+					  <h2 class="mt-4  wow fadeIn" data-wow-duration="2s" data-wow-delay="3s">Educación de calidad a tu alcance</h2>
+					
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-6 text-center mt-5">
+				<a href="#oferta" class="mx-auto btn btn-primary js-scroll-trigger wow fadeInUp" data-wow-duration="1s" data-wow-delay="4s">Comienza</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	  
+
+
+
+    <!-- oferta educativa -->
+    <section id="oferta" class="">
+		<p class="titulos negro text-center mt-5">Oferta <span class="naranja gruesos">educativa</span></p>
+		<div class="row wow fadeInUp">
+			<div class="col-lg-4">
+				<img src="img/oferta01.jpg" alt="cursos" class="img-fluid w-100 ">
+								<div class="d-flex flex-row w100 bg-verde p-3">
+					<div>
+						<h1>Crusos</h1>
+						<p>Programas de formación extracurricular que profundizan en conocimientos...</p>
+					</div>
+					<div class="inf px-5 ml-2">
+						<i class="fas fa-info gris"></i>				
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4">
+				<img src="img/oferta02.jpg" alt="" class="img-fluid w-100">
+				<div class="d-flex flex-row w100 bg-amarillo p-3">
+					<div>
+						<h1>Diplomados</h1>
+						<p>Como parte del proceso de ampliación, profundización, y actualización...</p>
+					</div>
+					<div class="inf px-5 ml-2">
+						<i class="fas fa-info gris"></i>				
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4">
+				<img src="img/oferta03.jpg" alt="" class="img-fluid w-100">
+				<div class="d-flex flex-row w100 bg-verde p-3">
+					<div>
+						<h1>Posgrados</h1>
+						<p>Son el espacio para el fomento, la formación, el desarrollo, la investigación...</p>
+					</div>
+					<div class="inf px-5 ml-2">
+						<i class="fas fa-info gris"></i>				
+					</div>
+				</div>
+			</div>
+		</div>
+		
+    </section>
+
+    <!-- Modalidad en linea -->
+    <section id="modalidad" class="">
+		<p class="titulos naranja text-center mt-5"><span class="dorado gruesos">Modalidad</span> <span class="negro">en</span> <span class="naranja gruesos">línea</span></p>
+
+		<div class="row">
+			<div class="col-md-6 bg-black py-5 wow fadeInLeft">
+				<img src="img/video.png" alt="video" class="d-block mx-auto img-fluid">
+			</div>
+			<div class="col-md-6 bg-dorado p-5 text-white wow fadeInRight">
+				<p>Se refiere a una modalidad educativa que propicia y ofrece una mayor flexibilidad en la enseñanza–aprendizaje porque va más allá del uso de la infraestructura física, aprovechando las Tecnologías de la Información y la Comunicación TICs en beneficio de la educación lo que permite combinar el estudio y el trabajo.</p>
+				<p>Considerada por la UNESCO como “<em>una importante herramienta de expansión de las oportunidades educativas de la población</em>” genera nuevos patrones de enseñanza y aprendizaje, que contribuyen al desarrollo social y económico de México.</p>
+				<p>En este contexto la Universidad Latina como empresa socialmente responsable incorpora sus esfuerzos a la formación de alumnos, ahora a través de los servicios en línea desde los diferentes niveles del sistema de educación básica, media superior y superior, así como programas de ampliación, profundización, y actualización de conocimientos de la educación formal y no formal.</p>
+				<p>Para alcanzar los objetivos que implican este esfuerzo la Universidad facilita una gama de servicios en línea a través de su plataforma educativa; foros, chats, videos, materiales complementarios de aprendizaje, documentos de lectura, cuestionarios, blogs, podcast, que servirán de apoyo académico además de programas totalmente en línea que facilitan al alumno combinar obligaciones laborales con estudiantiles.</p>
+			</div>
+		</div>
+	</section>
+	  
+	<!-- preguntas frecuentes-->
+	  
+	<section id="preguntas">
+		<p class="titulos text-center mt-5"><span class="negro">Preguntas</span> <span class="naranja  gruesos">frecuentes</span></p>
+		<p class="text-center mt-1 mb-5 text-muted">Las cuestiones más concurrentes a cerca de la modalidad de estudios en línea</p>
+		<div class="d-fluid w-100 p-5" id="contpreguntas">
+			<div class="container">
+				<div id="accordion">
+					<div class="cards">
+					  <div class="mt-3">
+						<a class="pregunta" data-toggle="collapse" href="#acc1">
+						  <i class="fas fa-plus"></i> ¿Cuál es diferencia de una oferta educativa presencial, abierta y en línea o a distancia?
+						</a>
+					  </div>
+					  <div id="acc1" class="collapse show" data-parent="#accordion">
+						<div class="respuesta">
+						  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+						</div>
+					  </div>
+					  <div class="mt-3">
+						<a class="pregunta" data-toggle="collapse" href="#acc2">
+						  <i class="fas fa-plus"></i> ¿Cuáles son las ventajas de estudiar a distancia?
+						</a>
+					  </div>
+					  <div id="acc2" class="collapse " data-parent="#accordion">
+						<div class="respuesta">
+						  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+						</div>
+					  </div>
+					  <div class="mt-3">
+						<a class="pregunta" data-toggle="collapse" href="#acc3">
+						  <i class="fas fa-plus"></i> ¿De qué forma se estudia a distancia?
+						</a>
+					  </div>
+					  <div id="acc3" class="collapse" data-parent="#accordion">
+						<div class="respuesta">
+						  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+						</div>
+					  </div>
+					  <div class="mt-3">
+						<a class="pregunta" data-toggle="collapse" href="#acc4">
+						  <i class="fas fa-plus"></i> ¿Qué es la plataforma tecnológica Moodle?
+						</a>
+					  </div>
+					  <div id="acc4" class="collapse" data-parent="#accordion">
+						<div class="respuesta">
+						  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+						</div>
+					  </div>
+					  <div class="mt-3">
+						<a class="pregunta" data-toggle="collapse" href="#acc5">
+						  <i class="fas fa-plus"></i> ¿Cuál es la válidez de los estudios realizados a distancia o en línea?
+						</a>
+					  </div>
+					  <div id="acc5" class="collapse" data-parent="#accordion">
+						<div class="respuesta">
+						  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+						</div>
+					  </div>
+					</div>
+				  </div>
+			</div>
+		</div>
+	  </section>
+
+	  
+	<!-- ciontacto -->
+	  
+	<section id="contacto">
+		<p class="titulos text-center mt-5"><span class="naranja gruesos">Contáctanos</span></p>
+		<p class="text-center mt-1 mb-5 text-muted">Ponte en comunicación con nosotros y en breve obtendrás respuesta</p>
+	  
+		<div class="row w-100 bg-naranja py-5">
+			<div class="col-md-12">
+				<div class="container">
+					<form class="ml-auto" id="form-contacto" method="post" action="process.php">
+						<div class="row pb-3">
+							<div class="col-md-4">
+								<div class="input-group">
+									<input type="text" class="form-control" placeholder="Nombre*" id="nombre" name="nombre">
+									<div class="invalid-feedback text-white">
+						        		Por favor captura tu nombre
+						      		</div>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="input-group">
+									<input type="text" class="form-control " placeholder="Paterno*" id="aPaterno" name="aPaterno">
+									<div class="invalid-feedback text-white">
+						        		Por favor captura tu apellido paterno
+						      		</div>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="input-group">
+									<input type="text" class="form-control " placeholder="Materno" id="aMaterno" name="aMaterno">
+								</div>
+							</div>
+						</div>
+						<div class="d-block w-100 pb-3">
+							<div class="input-group">
+								<input type="text" class="form-control " placeholder="Correo electrónico*" id="email" name="email">
+								<div class="invalid-feedback text-white">
+					        		Por favor captura tu correo electrónico
+					      		</div>
+							</div>
+						</div>
+						<div class="row pb-3">
+							<div class="col-md-6">
+								<div class="input-group">
+									<input type="text" class="form-control " placeholder="Teléfono (local)*" id="telefono" name="telefono">
+									<div class="invalid-feedback text-white">
+						        		Por favor captura tu teléfono local (sólo números)
+						      		</div>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="input-group">
+									<input type="text" class="form-control " placeholder="Teléfono (celular)" id="celular" name="celular">
+								</div>
+							</div>
+						</div>
+						<div class="d-block w-100 pb-3">
+							<input style="height: 100px;" type="text" class="form-control text-top " id="mensaje" name="mensaje" placeholder="Mensaje* (máximo 1500 caracteres)">
+							<div class="invalid-feedback text-white">
+				        		Por favor captura el mensaje
+				      		</div>
+						</div>
+						<div class="d-flex justify-content-center">
+							<button class="btns px-5 py-2" type="button" id="enviar">Enviar</button>
+						</div>
+					</form>
+					
+					<div class="alert alert-success" role="alert" id="mensajeCorrecto" style="display: none;">
+  						<h4 class="alert-heading">¡Mensaje enviado!</h4>
+  						<p>Sus datos se han capturado y enviado de forma correcta a la Universidad Latina, En menos de 24 horas obtendrá respuesta a su petición</p>
+						<hr>
+  						<p class="mb-0">Muchas gracias.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- ciontacto -->
+	  
+	<section id="confirmacion" style="display: none;">
+		<div class="row w-100 bg-naranja py-5">
+			<div class="col-md-12">
+				<div class="container">
+					<div class="alert alert-success" role="alert" id="mensajeCorrecto" >
+						<h4 class="alert-heading">¡Mensaje enviado!</h4>
+  						<p>Sus datos se han capturado y enviado de forma correcta a la Universidad Latina, En menos de 24 horas obtendrá respuesta a su petición</p>
+						<hr>
+  						<p class="mb-0">Muchas gracias.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	  
+
+    <!-- Footer -->
+    <footer class="bg-black small text-center text-white-50">
+		<img src="img/logosbco.png" alt="logos" class="img-fluid">
+      <div class="container">
+		  
+		  <p class="mt-5">©Copyright 2018 UNILA en línea. Todos los derechos reservados.</p>
+		  <p>Aviso de privacidad</p>
+		
+      </div>
+    </footer>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!--  JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- scripts extras -->
+    <script src="js/palmenu.min.js"></script>
+	<script src="js/wow.min.js"></script>
+
+	<!-- login -->
+    <script src="js/login.js"></script>
+
+	<!-- Modal -->
+	<div class="modal fade" id="error-login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  		<div class="modal-dialog" role="document">
+    		<div class="modal-content">
+      			<div class="modal-header">
+        			<h5 class="modal-title" id="exampleModalLabel">Error de logueo</h5>
+        			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          				<span aria-hidden="true">&times;</span>
+        			</button>
+      			</div>
+      			<div class="modal-body">
+        			Por favor capture usuario y contraseña para acceder al campus virtual
+      			</div>
+      			<div class="modal-footer">
+			        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      			</div>
+    		</div>
+  		</div>
+	</div>
+	
+</body>
+
+	<script>
+       wow = new WOW(
+      {
+        animateClass: 'animated',
+      }
+    );
+    wow.init();
+    </script>
+
+	
+</html>

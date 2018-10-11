@@ -1,0 +1,562 @@
+/*!
+ */
+
+#mainNav {
+  min-height: 56px;
+  background: url(../img/bg-menu.jpg) repeat-x;
+}
+
+@media (max-width: 992px) {
+	#mainNav { background: #E1E6E1;}
+}
+
+#mainNav .navbar-toggler {
+  font-size: 50%;
+  padding: 0.5;
+
+ color: #64a19d;
+  border: 0px;
+}
+
+#mainNav .navbar-toggler:focus {
+  outline: none;
+}
+
+#mainNav .navbar-brand {
+/*  color: #161616;
+  font-weight: 700;
+  padding: .9rem 0;*/
+}
+
+#mainNav a.navbar-brands img{
+	
+		width: 6.8rem;
+	
+} 
+
+#mainNav .navbar-nav .nav-item:hover {
+  color: fade(white, 80%);
+  outline: none;
+  background-color: transparent;
+}
+
+#mainNav .navbar-nav .nav-item:active, #mainNav .navbar-nav .nav-item:focus {
+  outline: none;
+  background-color: transparent;
+}
+
+@media (min-width: 992px) {
+  #mainNav {
+    padding-top: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+    background-color: transparent;
+    -webkit-transition: background-color 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
+  }
+  #mainNav .navbar-brand {
+   /* padding: .5rem 0;
+    color: rgba(255, 255, 255, 0.9);*/
+  }
+  #mainNav .nav-link {
+    -webkit-transition: none;
+    transition: none;
+    padding: 2rem 1.5rem;
+    color: rgba(255, 255, 255, 0.9);
+	  
+	  font-weight: 700;
+  }
+  #mainNav .nav-link:hover {
+    color: #c3c3c3;
+  }
+  #mainNav .nav-link:active {
+    color: white;
+  }
+  #mainNav.navbar-shrink {
+    background-color: #000;
+	  background-image: none !important;
+  }
+ 
+	
+	#mainNav.navbar-shrink .navbar-brands {
+    display: none;
+		top: -100px;
+		position: absolute;
+	
+  }
+	
+	
+  #mainNav.navbar-shrink .nav-link {
+    color: rgba(255, 255, 255, 0.9);;
+    padding: 1.5rem 1.5rem 1.25rem;
+    border-bottom: 0.25rem solid transparent;
+  }
+  #mainNav.navbar-shrink .nav-link:hover {
+    color: #c3c3c3;
+  }
+  #mainNav.navbar-shrink .nav-link:active {
+    color: rgba(255, 255, 255, 0.55);
+  }
+  #mainNav.navbar-shrink .nav-link.active {
+    color: rgba(255, 255, 255, 0.55);
+    outline: none;
+    border-bottom: 0.25rem solid #9d380f;
+  }
+	
+	#mainNav.navbar-shrink ul#logoinicio {
+    display: none;
+		top: -100px;
+		position: absolute;
+		
+  }
+		#mainNav.navbar-shrink ul#menuredes {
+    display: none;
+		top: -100px;
+		position: absolute;
+			
+  }
+		#mainNav.navbar-shrink ul#ligasindex {
+   top: 0px;
+	left: 0px;
+			background: none;
+		
+		position: absolute;
+			
+  }
+}
+
+/*los customs*/
+#logoinicio{
+
+}
+
+#iniciosesion{
+	border-left: dashed 1px #ff7733;
+	border-right: dashed 1px #ff7733;
+	font-weight: bold;
+	font-size: 90%;
+	width: 30%;
+	padding: 0.2rem;
+	
+}
+
+
+#iniciosesion i{
+	
+	color: #FFF;
+	padding:0 .5rem;
+}
+
+#iniciosesion input{
+	border-radius: 0px;
+	color: #E15634;
+	font-family: 'Raleway', sans-serif;
+	vertical-align: text-top;
+	width: 70%;
+	float: left;
+	margin-right: 0.2rem;
+}
+
+
+#iniciosesion button{
+	background: #F4390C;
+	display: inline;
+	color: white;
+	font-weight: 700;
+	border-radius: 0;
+	border: none;
+	font-family: 'Raleway', sans-serif;
+	cursor: pointer;
+	height: auto;
+	padding:.2rem .5rem;
+	margin-top: .2rem;
+	width: 28%;
+}	
+
+#iniciosesion button:hover {
+  background-color: #f7ac2f;
+}
+
+#iniciosesion button:focus {
+  background-color: black;
+  color: #cbb279;
+}
+
+#iniciosesion button:active {
+  background-color: black !important;
+	color: #f7ac2f;
+}
+
+
+#iniciosesion ::placeholder {
+    color: #E15634 !important;
+	font-family: 'Raleway', sans-serif;
+	vertical-align: text-top;
+    opacity: 1; /* Firefox */
+}
+
+#iniciosesion :-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: #E15634 !important;
+	font-family: 'Raleway', sans-serif;
+	vertical-align: text-top;
+}
+
+#iniciosesion ::-ms-input-placeholder { /* Microsoft Edge */
+   color: #E15634 !important;
+	font-family: 'Raleway', sans-serif;
+	vertical-align: text-top;
+}
+
+
+@media (max-width: 992px) {
+	#iniciosesion{
+	width: 100%;
+
+}
+
+	
+}
+
+/*fin inicio sesion*/
+
+#menuredes{
+	/*background:#cbb377;*/
+	color: #e1e6e2;
+	
+}
+#menuredes i{
+	font-size: 1.1rem;
+}
+#menuredes a.nav-link{
+	color: #e1e6e2 !important;
+	padding: 0.60rem ;
+}
+#menuredes a.nav-link:hover{
+	color:  #c3c3c3 !important;
+}
+
+#busqueda input{
+	background: #d6cbab;
+	border: none;
+	border-radius: 0;
+	color: #b6a071 !important;
+	margin-top: 2px;
+}
+#busqueda button{
+	background: #b78218;
+	color: white;
+	border-radius: 0;
+	border: none;
+	margin-top: 2px;
+}
+
+
+#busqueda ::placeholder {
+    color: #b6a071 !important;
+    opacity: 1; /* Firefox */
+}
+
+#busqueda :-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: #b6a071 !important;
+}
+
+#busqueda ::-ms-input-placeholder { /* Microsoft Edge */
+   color: #b6a071 !important;
+}
+
+
+#ligasindex{
+
+}
+
+#logoeduca{
+	background: #E1E6E2;
+}
+
+/* arriba */
+
+#arriba{
+	position: relative;
+	padding: 18rem 0 11rem;
+  background:url("../img/bg-masthead.jpg");
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+#arribatxt{
+	padding-top: 22%;
+}
+
+#arriba h1 {
+  font-family: 'Raleway', sans-serif;
+  color: rgba(255, 255, 255, 0.9);
+  text-shadow: 2px 0px 8px rgba(0, 0, 0, 0.8);
+}
+
+#arriba h2 {
+  font-size: 1.4rem;
+  color: #f7ac2f;
+}
+
+@media (min-width: 768px) {
+  #arriba h1 {
+    font-size: 1.25rem;
+    line-height: 2.25rem;
+  }
+}
+
+@media (max-width: 992px) {
+	#arriba{
+		padding-top:25%;
+		padding-bottom: 5%;
+		background:url("../img/bg-masthead.jpg");
+
+  background-position: 75% 15%;
+ background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;		
+	}
+	
+	  #arriba h1 {
+    font-size: 1.5rem;
+    line-height:2.2rem;
+  /*  letter-spacing: 0.5rem;*/
+	  padding-top:5%;
+  }
+}
+
+/* fin arriba*/
+.btn {
+  -webkit-box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
+  box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
+  padding: 1.25rem 2rem;
+  font-family: 'Raleway', sans-serif;
+  font-size: 80%;
+  text-transform: uppercase;
+  letter-spacing: .15rem;
+  border: 0;
+}
+
+.btn-primary {
+  background-color: #e15635;
+}
+
+.btn-primary:hover {
+  background-color: #f4390c;
+}
+
+.btn-primary:focus {
+  background-color: black;
+  color: #cbb279;
+}
+
+.btn-primary:active {
+  background-color: black !important;
+	color: #f7ac2f;
+}
+
+
+/* secciones */
+
+.naranja{
+	color:#e15733;
+}
+.amarillo{
+	color:#faa612;
+}
+.verde{
+	color:#678f1f;
+}
+
+.rojo{
+	color:#A10702;
+}
+
+.dorado{
+	color:#cbb174;
+}
+
+.negro{
+	color: #000;
+}
+
+.gruesos{
+	font-weight:700;
+}
+
+.gris{
+	color: #D1D1D1;
+}
+
+.text-muted{
+	font-family: 'Raleway', sans-serif;
+}
+
+.titulos{
+	font-family: 'Raleway', sans-serif;
+	font-size: 2.5rem;
+	font-weight: 300;
+}
+
+.bg-verde{
+	background-color:#698e25;
+}
+
+.bg-amarillo{
+	background-color:#faa612;
+}
+.bg-naranja{
+	background-color:#e15635;
+}
+.bg-rojo{
+	background-color:#A10702;
+}
+
+.bg-dorado{
+	background-color:#CBB276;
+}
+
+
+/* oferta */
+
+#oferta{
+	color: white;
+}
+
+#oferta h1{
+	font-family: 'Raleway', sans-serif;
+	font-size: 150%;
+	font-weight: 700;
+}
+
+.inf{
+	float: right;
+	border-left: dashed 3px white;
+	font-size: 5rem;
+	font-weight: 700;
+}
+
+
+/* preguntas frecuentes*/
+
+#contpreguntas{
+/*	background: -moz-linear-gradient(top, rgba(225,86,53,0.10) 50%, rgba(142,48,34,1) 100%) , url("../img/bg-man-working.jpg"); /* FF3.6-15 */
+/*	background: -webkit-linear-gradient(top, rgba(225,86,53,0.10) 50%,rgba(142,48,34,1) 100%), url("../img/bg-man-working.jpg"); /* Chrome10-25,Safari5.1-6 */
+/*	background: linear-gradient(to bottom, rgba(225,86,53,0.10) 50%,rgba(142,48,34,1) 100%), url("../img/bg-man-working.jpg"); */
+
+  /*background: -webkit-gradient(linear, left top, left bottom, from(rgba(22, 22, 22, 0.1)), color-stop(75%, rgba(255, 255, 255, 0.5)), to(#161616)), url("../img/bg-masthead.jpg");
+  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(255, 255, 255, 0.5) 75%, #161616 100%), url("../img/bg-masthead.jpg");*/
+  background:url("../img/bg-man-working.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+.pregunta{
+	color: white;
+	font-family: 'Raleway', sans-serif;
+	font-size: 1.2rem;
+	font-weight: 700;
+}
+
+.pregunta i{
+	color: #cecfca;
+}
+
+.cards a:link{
+	color:white;
+}
+
+.respuesta{
+	color: white;
+	font-family: 'Open Sans', sans-serif;
+}
+
+
+/* Contacto */
+
+#contacto input{
+	border-radius: 0px;
+	color: #E15634;
+	font-family: 'Raleway', sans-serif;
+	vertical-align: text-top;
+}
+
+
+#contacto button{
+	background: #CBB276;
+	color: white;
+	font-weight: 700;
+	border-radius: 0;
+	border: none;
+	font-family: 'Raleway', sans-serif;
+	cursor: pointer;
+}
+
+#contacto button:hover {
+  background-color: #f7ac2f;
+}
+
+#contacto button:focus {
+  background-color: black;
+  color: #cbb279;
+}
+
+#contacto button:active {
+  background-color: black !important;
+	color: #f7ac2f;
+}
+
+
+#contacto ::placeholder {
+    color: #E15634 !important;
+	font-family: 'Raleway', sans-serif;
+	vertical-align: text-top;
+    opacity: 1; /* Firefox */
+}
+
+#contacto :-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: #E15634 !important;
+	font-family: 'Raleway', sans-serif;
+	vertical-align: text-top;
+}
+
+#contacto ::-ms-input-placeholder { /* Microsoft Edge */
+   color: #E15634 !important;
+	font-family: 'Raleway', sans-serif;
+	vertical-align: text-top;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 0.0625em;
+	color: #161616;
+}
+
+a {
+  color: #64a19d;
+}
+
+a:focus, a:hover {
+  text-decoration: none;
+  color: #3c6360;
+}
+
+.bg-black {
+  background-color: black !important;
+}
+
+.bg-primary {
+  background-color: #64a19d !important;
+}
+
+.text-primary {
+  color: #64a19d !important;
+}
+
+footer {
+  padding: 5rem 0;
+}
