@@ -463,7 +463,7 @@
 }
 
 .pregunta i{
-	color: #cecfca;
+	color: #FAA612;
 }
 
 .cards a:link{
@@ -473,6 +473,7 @@
 .respuesta{
 	color: white;
 	font-family: 'Open Sans', sans-serif;
+	margin-top:1rem;
 }
 
 
